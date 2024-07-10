@@ -2,38 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="cv, resume, Medvedkina">
     <meta name="description" content="Этот сайт - резюме Медведкиной Елизаветы">
+    <link rel="stylesheet" href="style.css">
     <title>Elizaveta Medvedkina Resume</title>
 </head>
 <body>
-    <img src="Me.jpg" width="200" alt="Елизавета Медведкина">
-    <h1>Елизавета Медведкина</h1>
-    <p>Я увлекаюсь <strong>лингвистикой</strong>, знаю <em>английский на уровне C2</em> и <em>изучаю шведский</em>.</p>
 
-    <p>В свободное время люблю погружаться в вымышленные миры с помощью <em>книг, фильмов и сериалов</em>.</p>    
+    <div class="container">
+
+    <div class="info"> 
+    <img src="photo_2022-10-03_13-48-11.jpg" alt="Елизавета Медведкина" class="avatar">
+
+    <div class="info-text">
+    <h1>Елизавета Медведкина</h1>
+    <p>Я интересуюсь <strong>лингвистикой</strong>, знаю <em>английский на уровне C2</em> и <em>изучаю шведский</em>.</p>
+
+    <p>В свободное время люблю погружаться в вымышленные миры благодаря <em>книгам, фильмам и сериалам</em>.</p>    
         
-    <p>Также <strong>пишу сценариии и рассказы</strong>.</p>
+    <p>Также <strong>пишу сценариии, рассказы и изучаю Frontend</strong>.</p>
    
     <h4>Мои социальные сети:</h4>
-    <a href="https://www.instagram.com/awkwardwriter/?next=%2F" target="_blank">instagram</a>
+    <a href="https://www.instagram.com/awkwardwriter/?next=%2F" target="_blank">Instagram</a>
     |
     <a href="https://t.me/Elizabeth_the_alien" target="_blank">Telegram</a>
     |
     <a href="https://www.linkedin.com/in/elizaveta-medvedkina-33672a238/" target="_blank">LinkedIn</a> 
+    </div>
+    </div>
+    
+    <div class="card bg-salmon">
     <h2>Мои хобби</h2>
-    <ol>
+
+    <ol class="list">
         <li>Чтение</li>
-        <li>Изучение новых языков</li>
+        <li>Совершенствование английского</li>
         <li>Путешествия</li>
+        <li>Горные лыжи</li>
         <li>Написание рассказов/сценариев</li>
     </ol>
+    </div>
+    
+    <div class="card bg-blue">
     <h2>Опыт работы</h2>
-    <table>
+
+    <table class="table">
         <thead>
-            <tr>
-                <th>Название</th>
+            <tr class="companyname">
+                <th>Название компании</th>
                 <th>Должность</th>
                 <th>Год</th>
             </tr>
@@ -41,12 +59,12 @@
         <tbody>
             <tr>
                 <td>Est Rielt</td>
-                <td>Content Manager/Copywriter/Translator</td>
-                <td>Июль 2023-по н.в.</td>
+                <td>Контент-менеджер/Копирайтер/Переводчик</td>
+                <td>Июль 2023-Июль 2024</td>
             </tr>
             <tr>
                 <td>The Borgen Project</td>
-                <td>Writer/Journalist</td>
+                <td>Журналист</td>
                 <td>Декабрь 2022-Март 2023</td>
             </tr>
             <tr>
@@ -56,33 +74,53 @@
             </tr>
             <tr>
                 <td>Kinoafisha</td>
-                <td>Copywriter</td>
+                <td>Копирайтер</td>
                 <td>Октябрь 2020-Декабрь 2020</td>
             </tr>
             <tr>
                 <td>Elle Girl</td>
-                <td>Intern/Journalist</td>
+                <td>Стажер/Журналист</td>
                 <td>Декабрь 2019-Март 2020</td>
             </tr>
    </table>
-       </tbody>
-    <h2>Связаться со мной</h2>
-    <form>
-        <div>
+</div>
+
+<div class="card bg-pink">
+    <h2>Мои статьи</h2>
+
+    <ol class="list">
+        <li><a href="https://www.borgenmagazine.com/volunteer-centers-in-georgia/" target="_blank">Volunteer Centers in Georgia Help Ukrainian Refugees</a></li>
+        <li><a href="https://borgenproject.org/improving-health-in-africa/" target="_blank">5 Startups that are Improving Health in Africa</a></li>
+        <li><a href="https://borgenproject.org/problems-in-developing-countries/" target="_blank">3 Films that Highlight Problems in Developing Countries</a></li>
+        <li><a href="https://borgenproject.org/organizations-in-india/" target="_blank">5 Organizations in India that Help Women Who Faced Violence</a></li>
+        <li><a href="https://www.borgenmagazine.com/how-taylor-swift-helps-people-worldwide/" target="_blank">How Taylor Swift helps people worldwide</a></li>
+    </ol>
+    </div>
+
+</tbody>
+    
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+        
+        <div class="form-group">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name" placeholder="Введите имя">
         </div>
-        <div>
+        <div class="form-group">
             <label for="email">Ваш email:</label>
             <input type="email" id="email" placeholder="Введите email">
         </div>
-        <div>
+    </div>
+        <div class="form-group">
             <label for="message">Ваше сообщение:</label>
-            <br>
             <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
         </div>
-        <button type="submit">Отправить</button>
+
+
+        <input class="btn" type="submit" value="Отправить">
     </form>
-    
+    </div>
 </body>
 </html>
